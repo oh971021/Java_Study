@@ -1,0 +1,11 @@
+
+public class Notebook extends Product {
+	int battery;
+	int volume;
+	
+	public Notebook() {}
+	
+	public Notebook(String name, int price, int battery, int volume) {
+		super(name, price);
+	}
+}

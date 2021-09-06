@@ -1,0 +1,25 @@
+public class IAMain_2 {
+	public static void main(String[] args) {
+		
+		// 컴퓨터 ( 품명, 가격 )
+		
+			// cpu, ram, hdd
+	
+		// 정보 출력
+		
+		System.out.println("================");
+		
+		// 볼펜 ( 품명, 가격, 색깔 )
+		// 정보 출력
+		
+		System.out.println("================");
+		
+		// 노트북 ( 품명, 가격, 무게)
+			
+			// 배터리, 용량
+		
+		// 정보 출력
+		
+		
+	}
+}

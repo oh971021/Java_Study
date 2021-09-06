@@ -1,0 +1,8 @@
+public class Pen extends Product {
+	String color;
+	
+	@Override
+	public void info() {
+		super.info();
+	}
+}

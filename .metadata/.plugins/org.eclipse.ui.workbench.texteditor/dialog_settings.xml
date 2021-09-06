@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="sum"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="{&quot;coord&quot;:{&quot;lon&quot;:126.9778,&quot;lat&quot;:37.5683},&quot;weather&quot;:[{&quot;id&quot;:800,&quot;main&quot;:&quot;Clear&quot;,&quot;description&quot;:&quot;맑은 하늘&quot;,&quot;아이콘 &quot;:&quot;01d&quot;}],&quot;기본&quot;:&quot;역&quot;,&quot;주&quot;:{&quot;temp&quot;:299.69,&quot;feels_like&quot;:299.69,&quot;temp_min&quot;:298.84,&quot;temp_max&quot;:301.38,&quot;압력&quot;:1007 ,&quot;습도&quot;:36,&quot;해수면&quot;:1007,&quot;grnd_level&quot;:1001},&quot;시정&quot;:10000,&quot;바람&quot;:{&quot;속도&quot;:3.29,&quot;deg&quot;:261,&quot;돌풍&quot;:3.67}, &quot;구름&quot;:{&quot;all&quot;:2},&quot;dt&quot;:1633064824,&quot;sys&quot;:{&quot;type&quot;:1,&quot;id&quot;:5509,&quot;country&quot;:&quot;KR&quot;,&quot;일출&quot;:1633037232,&quot; 일몰&quot;:1633079780},&quot;시간대&quot;:32400,&quot;id&quot;:1835848,&quot;name&quot;:&quot;서울&quot;,&quot;cod&quot;:200}"/>
+			<item value="sum"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="824"/>
+		<item key="DIALOG_Y_ORIGIN" value="268"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

@@ -1,0 +1,10 @@
+public class Person {
+	private String name;
+	private String gender;
+	
+	// 기본 생성자 : 생성자를 전혀 건드리지 않으면 자동으로 만들어 줌.
+	// 클래스 내에 생성자가 보이지 않아도 초기 선언 시 생성 되어있음.
+	public Person() {
+		System.out.println("응애");
+	}
+}

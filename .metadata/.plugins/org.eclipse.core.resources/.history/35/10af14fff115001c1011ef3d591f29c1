@@ -1,0 +1,10 @@
+		// ¼³°èµµ : CPU:2.5, RAM:8, HDD:256
+public class Computer {
+	double CPU;
+	int RAM;
+	int HDD;
+	
+	void computerInfo(String CPU, int RAM, String HDD) {
+		System.out.println("CPU:"+CPU+"hz"+"  RAM:"+RAM+"MB"+"  HDD:"+HDD+"  GB");
+	}
+}

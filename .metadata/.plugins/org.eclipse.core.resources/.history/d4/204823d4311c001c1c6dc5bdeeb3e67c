@@ -1,0 +1,23 @@
+public class Computer extends Product {
+	// 상속받은 값들 name, price
+	int CPU;
+	int RAM;
+	int HDD;
+	
+	public Computer() {}
+	
+	public Computer(int CPU, int RAM, int HDD) {
+		super(getName(), getPrice())
+		this.CPU = CPU;
+		this.RAM = RAM;
+		this.HDD = HDD;
+	}
+	
+	@Override
+	public void info() {
+		super.info();
+		System.out.println("CPU : "+CPU+"hz");
+		System.out.println("RAM : "+RAM+"MB");
+		System.out.println("HDD : "+HDD+"GB");
+	}
+}

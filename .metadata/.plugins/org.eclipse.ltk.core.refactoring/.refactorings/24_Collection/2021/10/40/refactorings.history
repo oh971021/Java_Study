@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;CMain3&apos; to &apos;CMain_3&apos;&#x0D;&#x0A;- Original project: &apos;24_Collection&apos;&#x0D;&#x0A;- Original element: &apos;CMain3&apos;&#x0D;&#x0A;- Renamed element: &apos;CMain_3&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CMain3&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{CMain3.java[CMain3" matchStrategy="1" name="CMain_3" qualified="false" references="true" similarDeclarations="false" stamp="1633055983503" textual="false" version="1.0"/>
+</session>

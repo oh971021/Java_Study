@@ -1,0 +1,5 @@
+public class Computer extends Product {
+	int CPU;
+	int RAM;
+	int HDD;
+}

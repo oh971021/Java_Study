@@ -1,0 +1,14 @@
+public class Programer {
+	private String name;
+	private int age;
+	private boolean OT;
+
+	public void work() {
+		System.out.println("코딩하기");
+	}
+	
+	public void home() {
+		System.out.println("감사요");
+	}
+	
+}

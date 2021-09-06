@@ -1,0 +1,12 @@
+		// 설계도 : CPU:2.5, RAM:8, HDD:256
+public class Computer {
+	String name;
+	double CPU;
+	int RAM;
+	int HDD;
+	
+	void computerInfo(double CPU, int RAM, int HDD) {
+		System.out.println("사용자명 : "+name);
+		System.out.println("CPU:"+CPU+"hz"+"  RAM:"+RAM+"MB"+"  HDD:"+HDD+"GB");
+	}
+}

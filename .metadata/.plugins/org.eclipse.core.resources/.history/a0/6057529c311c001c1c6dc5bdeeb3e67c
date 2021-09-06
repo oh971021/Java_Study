@@ -1,0 +1,16 @@
+public class Computer extends Product {
+	// 상속받은 값들 name, price
+	int CPU;
+	int RAM;
+	int HDD;
+	
+	public Computer() {}
+	
+	public Computer(int CPU, int RAM, int HDD) {
+		this.CPU = CPU;
+		this.RAM = RAM;
+		this.HDD = HDD;
+	}
+	
+	
+}

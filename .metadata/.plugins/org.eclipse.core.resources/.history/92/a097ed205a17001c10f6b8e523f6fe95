@@ -1,0 +1,23 @@
+public class Programer {
+	private String name;
+	private int age;
+	private boolean OT;
+
+	public Programer(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void work(String s) {
+		if (s.equals("일")) {
+		System.out.println("코딩하기");
+		} 		
+	}
+	
+	public void home(String s) {
+		if (s.equals("퇴근")) {
+			System.out.println("감사요");
+		}
+	}
+}
