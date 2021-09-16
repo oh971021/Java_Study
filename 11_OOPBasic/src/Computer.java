@@ -6,7 +6,7 @@ public class Computer {
 	double CPU;
 	int RAM;
 	int HDD;
-	
+
 	Mouse mouse = new Mouse();
 	Keyboard keyboard = new Keyboard();
 	
@@ -17,7 +17,7 @@ public class Computer {
 }
 
 class Mouse {
-	void Click(String value) {
+	public void Click(String value) {
 		if (value.equals("left")) {
 			System.out.println("just click");
 		} else if (value.equals("right")) {
@@ -29,11 +29,11 @@ class Mouse {
 }
 
 class Keyboard {
-	void Print() {
+	public void Print() {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.print("출력할 값을 입력해주세요 : ");
 		String value = s.nextLine();
-		System.out.println(value);
+		System.out.println("검색한 값 : " + value);
 	}
 }

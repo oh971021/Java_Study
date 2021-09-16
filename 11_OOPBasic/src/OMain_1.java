@@ -48,8 +48,14 @@ public class OMain_1 {
 		
 		// 설계도 : CPU:2.5, RAM:8, HDD:256
 		// PrintInfo로 정보 찍기
-		
+
 		Computer myCom = new Computer();
+		
+		myCom.name = "오준석";
+		myCom.CPU = 2.5;
+		myCom.RAM = 8;
+		myCom.HDD = 256;
+		
 		myCom.computerInfo();
 		myCom.mouse.Click("left");
 		myCom.keyboard.Print();
