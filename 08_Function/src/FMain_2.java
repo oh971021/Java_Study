@@ -1,3 +1,4 @@
+import java.nio.channels.ClosedByInterruptException;
 import java.util.Scanner;
 
 import org.w3c.dom.Text;
@@ -56,6 +57,7 @@ public class FMain_2 {
 		int age = s.nextInt();
 		Hello(age);
 		System.out.println("-----------");
+		s.close();
 	}
 	
 	// Test
