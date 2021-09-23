@@ -14,5 +14,9 @@ public class VMain_1 {
 		System.out.println(b);
 		System.out.println(c);
 		System.out.println(d);
+	
+		System.out.println(a + b);
+		System.out.println(b + c);
+		System.out.println(c + d);
 	}
 }

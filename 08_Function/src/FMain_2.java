@@ -1,10 +1,3 @@
-import java.nio.channels.ClosedByInterruptException;
-import java.util.Scanner;
-
-import org.w3c.dom.Text;
-
-import jdk.internal.agent.resources.agent;
-
 public class FMain_2 {
 	// 월급을 넣으면 연봉을 구해서 '출력' 해주는 함수
 	// 월급 * 12
