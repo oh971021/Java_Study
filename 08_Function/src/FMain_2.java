@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class FMain_2 {
 	// 월급을 넣으면 연봉을 구해서 '출력' 해주는 함수
 	// 월급 * 12
