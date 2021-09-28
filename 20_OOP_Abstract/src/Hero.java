@@ -11,7 +11,6 @@ public abstract class Hero {
 	}
 	
 	abstract void attack();
-	
 }
 
 class SuperMan extends Hero {
@@ -27,7 +26,6 @@ class SuperMan extends Hero {
 	public SuperMan(String name) {
 		super(name);
 	}
-	
 }
 
 class IronMan extends Hero {
