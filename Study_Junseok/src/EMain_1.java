@@ -27,11 +27,17 @@ class Parent {
 	public void method2() {
 		System.out.println("P-method2()");
 	}
+	
+	public void method3() {
+		System.out.println("P-method3()");
+	}
+	
 }
 
 class Child extends Parent {
 	public String field2;
 	
+	@Override
 	public void method3() {
 		System.out.println("C-method3()");
 	}
