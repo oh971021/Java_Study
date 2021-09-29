@@ -10,6 +10,10 @@ public class EMain_1 {
 		child.field2 = "data2";
 		child.method3();
 		
+		// 객체의 타입 학인하는 연산자
+		boolean result = child instanceof Parent;
+		System.out.println(result);
+		
 	}
 }
 
