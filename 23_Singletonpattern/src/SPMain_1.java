@@ -3,14 +3,20 @@ public class SPMain_1 {
 	public static void main(String[] args) {
 		
 		// 자기자신 : 이름, 나이
-		Me m = new Me("준석", 25);
-		m.info();
-		System.out.println(m);
+		Me.getMe().info();
+		Me me = Me.getMe();
+		me.info();
+		System.out.println(me);
 		
-		Me m2 = new Me("준석", 25);
-		m2.info();
-		System.out.println(m2);
+		Me me2 = Me.getMe();
+		me.info();
+		System.out.println(me2);
 		
+		System.out.println("=============");
+		
+		// 아이언맨 : 이름, 나이 -> 정보출력
+		IronMan tony = IronMan.getTony();
+		tony.info();
 		
 	}
 }
