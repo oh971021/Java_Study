@@ -1,0 +1,121 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class RSPMain {
+	public static void main(String[] args) {
+		
+		// 가위바위보
+		Random r = new Random();
+		Scanner k = new Scanner(System.in);
+		
+		String hand[] = {"", "묵", "찌", "빠", "런"};
+		
+		int count = 0; // 몇판?
+		int draw = 0; // 무승부 횟수 체크
+		int lose = 0; // 패배 횟수 체크
+		int win = 0; // 승리 횟수 체크
+		
+		boolean loop = true; // 조건에 따라 탈출 
+		
+		System.out.println("======== Game Start ========");
+		
+		while (loop) {
+			
+			// 5점을 얻으면 승리! 
+			// 5점을 잃으면 패배!
+			if (win == 5 || lose == 5) {
+				break;
+			}
+			
+			// 연승 처리
+			if (win == 2) {
+				System.out.println("2연승 중 입니다. 화이팅!");
+			} else if (win == 3) {
+				System.out.println("3연승 중 입니다. 화이팅!");
+			} else if (win == 4) {
+				System.out.println("4연승 중 입니다. 제법이군요");
+			} 
+			
+			// 안내판
+			System.out.println("============================");
+			System.out.println("1. 묵 / 2. 찌 / 3. 빠 / 4. 런");
+			System.out.println("============================");
+			
+			// 물어보기, 내 숫자 뽑기
+			System.out.print("무엇을 내시겠습니까? : 숫자입력 > ");
+			int myHand = k.nextInt();
+			
+			// 사용자의 헛짓방지 ( 예외처리 )
+			if (myHand < 1 || myHand > 4) {
+				System.out.println("입력 오류");
+				count--;
+				continue;
+			} else if (myHand == 4) {
+				System.out.println("도망 가시는 건가요?");
+				count--;
+				break;
+			}
+			
+			// 컴퓨터 숫자 뽑기
+			int comHand = r.nextInt(3)+1;
+			// System.out.println("개발자 확인용 : " + comHand);
+			
+			// 서로 뭐 낸지 확인하기
+			System.out.println("(나) " + hand[myHand] + " : " + hand[comHand] + " (컴)");
+			System.out.print("결과 : ");
+			
+			// 조건1 : 내가 뭔가를 냈을 때, 3가지의 조건 (승, 패, 무)
+			// 조건1-1 : 무승부는 같으니까 합치자
+			if (myHand == comHand) {
+				System.out.println("무승부");
+				count++;
+				draw++;
+				continue;
+			}
+			// 조건2 : 컴퓨터의 손을 보고 승, 패 따지기 
+			if (myHand == 1) {
+				switch (comHand) {
+				case 2: // (묵 : 찌)
+					System.out.println("승리");
+					win++;
+					continue;
+				case 3: // (묵 : 빠)
+					System.out.println("패배");
+					count++;
+					lose++;
+					continue;
+				}
+			} else if (myHand == 2) {
+				switch (comHand) {
+				case 1: // (찌 : 묵)
+					System.out.println("패배");
+					count++;
+					lose++;
+					continue;
+				case 3: // (찌 : 빠)
+					System.out.println("승리");
+					count++;
+					win++;
+					continue;
+				}
+			} else if (myHand == 3) {
+				switch (comHand) {
+				case 1: // (빠 : 묵)
+					System.out.println("승리");
+					win++;
+					continue;
+				case 2: // (빠 : 찌)
+					System.out.println("패배");
+					count++;
+					lose++;
+					continue;
+				}
+			}
+		}
+		
+		// 몇판했는지, 최종 Total 말해주기
+		System.out.println((count+1) +"번의 게임을 진행했습니다.");
+		System.out.printf("========= %d승 %d무 %d패 ========\n", win, draw, lose);
+		System.out.println("========= Game Over ========");
+	}
+}
