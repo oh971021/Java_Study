@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Random;
 
 public class CMain_4 {
@@ -57,6 +58,12 @@ public class CMain_4 {
 		}
 		
 		System.out.println(lotto);
+		
+		// À§¿¡²¨ ¹Ù²ã¼­ »ç¿ë
+		ArrayList<Integer> lotto2 = new ArrayList<Integer>(lotto);
+		for (Integer i : lotto2) {
+			System.out.print(i+" ");
+		}
 		
 	}
 }
