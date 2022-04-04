@@ -14,6 +14,11 @@ public class EMain_1 {
 		boolean result = child instanceof Parent;
 		System.out.println(result);
 		
+		
+		for (String string : args) {
+			
+		}
+		
 	}
 }
 
