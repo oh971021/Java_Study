@@ -1,4 +1,7 @@
 package programers;
+
+// 두 개 뽑아서 더하기
+
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashSet;
