@@ -16,19 +16,19 @@ import java.util.*;
 public class level1_removeTheSameNumber {
     public int[] solution(int []arr) {
         ArrayList<Integer> al = new ArrayList<Integer>();
-        int x = 11;
+        int x = 10; // 0 ~ 9 의 숫자가 들어오기 때문에 비교변수가 될 변수는 0 > x > 9 로 초기화한다.
         
         for (int i = 0; i < arr.length; i++) {
-            if(x != arr[i]) {
+            if(x != arr[i]) { // 먼저 들어간 비교변수의 값과 해당 인덱스 변수와 같은 값이 아닌 경우 배열 추가
                 al.add(arr[i]);    
             }
-            x = arr[i];
+            x = arr[i]; // 먼저 들어간 비교변수 초기화
         }
         
-        int[] answer = new int[al.size()];
+        int[] answer = new int[al.size()]; // ArrayList to int[]
         
         for (int i = 0; i < answer.length; i++) {
-            answer[i] = al.get(i).intValue();
+            answer[i] = al.get(i).intValue(); 
         }
         
         return answer;
